@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Scheherazade+New&display=swap');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+	html {
+	  font-size: 60%;
+	}
+  }
+
+  @media (max-width: 61.25em) {
+	html {
+	  font-size: 58%;
+	}
+  }
+  
+  @media (max-width: 28.75em) {
+	html {
+	  font-size: 55%;
+	}
+  }
+
+
+
+
+
+
+
+
+body{
+	padding: 0;
+    margin: 0;
+	font-family: 'Scheherazade New', serif;
+	font-size: 1.8rem; /* 18px */
+  	font-weight: 400;
+  	line-height: 1.4;
+}
+
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	background-color: #889EAF ;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+nav .logo{
+	float: left;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	
+}
+
+.page-wrapper {
+    position: relative;
+  }
+
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+nav-link,a:hover{
+	background-color: #32502E;
+	transition: .9s ;
+	
+}
+
+
+/* welcome section */
+#welcome-section{
+	background-color:#CAB8FF;
+	padding-top: 0px;
+	margin-top: 0px;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+
+
+img {
+	display: block;
+	width: 100%;
+  }
+
+h1,
+h2 {
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+
+.welcome{
+	position: absolute;
+	margin-top: 3.9rem;
+	padding: 80px;
+	font-size: 70px;
+	width: 100%;
+	color: #290FBA;
+	
+}
+
+span{
+	display: block; 
+	color: #FFEDED;
+	width: 100%;
+	font-family: 'Scheherazade New', serif;
+	font-style: italic;
+	font-size: 3rem;
+	font-weight: 200;
+}
+
+#projects{
+	width: 100%;
+	height: 250vh;
+	background-color: #3D2C8D;
+	
+}
+ 
+.my_project{
+	background-color: #3D2C8D;
+}
+
+@media only screen and (max-width: 600px) {
+	.my_project{
+		height: 350vh;
+	
+	}
+
+}
+
+.projects-section {
+	text-align: center;
+	padding: 10rem 2rem;
+	
+	
+  }
+
+@media only screen and (max-width: 600px) {
+	.projects-section{
+		float: none;
+		height: 350vh;
+	
+	}
+
+}
+
+
+
+
+.project-tile{
+	text-align: center;
+	text-decoration: underline;
+	font-size: 3.5rem;
+	font-weight: 500;
+	max-width: 640px;
+	color: white;
+	margin: 0 auto 6rem auto;
+	border-bottom: 0.2rem solid var(--main-white);
+}
+
+  @media (max-width: 28.75em) {
+	.project-tile{
+	  font-size: 4rem;
+	}
+  }
+  
+
+
+
+
+
+div.skills {
+	border: 1px solid #ccc;
+  }
+  
+  div.skills:hover {
+	border: 1px solid #777;
+  }
+  
+  div.skills img {
+	width: 100%;
+	height: auto;
+	
+  }
+  
+  div.desc {
+    color: #fff;
+	padding: 1.125rem;
+	text-align: center;
+	font-size: 3.0rem;
+	font-weight: 500;
+  }
+  
+
+  .project__page {
+	margin: 0;
+	padding: 50px;
+	float: left;
+	width: 30.99999%;
+  }
+
+  /* footer */
+ 
+footer{
+	background-color: #852747;
+	width: 100%;
+	max-width: 100%;
+}
+
+
+
+#contact{
+	color: #fff;
+	padding-top: 100px;
+}
+
+.footer__text{
+	text-align: center;
+	font-size: 30px;
+	width: 100%;
+
+}
+
+.link-profile{
+	text-decoration: none;
+	color: white;
+	font-style: 4rem;
+	font-weight: 800;
+	padding: 12px 15px;
+	
+}
+
+link-profile, a:hover {
+	color:gray;
+	transition: .9s ;
+}
+
+
+
+
+.profile{
+	padding-bottom: 80px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	font-size: 3rem;
+	color: crimson;
+}
+
+.profile li{
+	list-style: none;
+}
+
+ 
+@media (max-width: 300px) {
+	footer {
+		padding: 15px;
+		flex: 1 0px;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+		
+	}
+
+	.footer-center i{
+		margin-left: 0;
+	}
+  }
+  
+@media only screen and (max-width: 500px){
+		.profile-link {
+			float: none;
+			display:  inline-block;
+			text-align: center;
+			width: 100%;
+			flex: 1;
+			margin-left: 0;
+		}
+}
+
+@media only screen and (max-width: 600px) {
+	.profile{
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+	
+
+@media only screen and (min-width: 300px){
+	#contact{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		
+	}
+}
+
+
+/* Nav bar media query */
+@media screen and (max-width: 768px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: #889EAF;
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+
+/* image media query */
+
+
+@media only screen and (max-width: 700px) {
+	.project__page {
+	  width: 49.99999%;
+	  margin: 6px 0;
+	}
+  }
+  
+  @media only screen and (max-width: 500px) {
+	.project__page {
+	  width: 100%;
+	}
+  }
+  
+  .clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
